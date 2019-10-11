@@ -14,7 +14,7 @@ git clone https://github.com/TiagoMarquesTR/terraform.git
 cd terraform
 ```
 Create an user(IAM), by URL https://console.aws.amazon.com/iam/home?region=us-east-1#/users and click in "Add user", select acess "Programmatic access" and set permissions for "AdministratorAcess". Download .csv, very important.
-Open the o console e type:
+Open the console and type:
 ```
 aws configure
 ```
@@ -36,7 +36,29 @@ terraform init
 
 Create your infra with this basic commad:
 ```
-terraform init
+terraform apply
 ```
 
 Finish
+
+## Basics commands
+
+Initialize terraform project:
+```
+terraform init
+```
+
+Verify infrastructure before building:
+```
+terraform plan
+```
+
+Create infrastructure
+```
+terraform apply
+```
+
+Destroy infrastructure
+```
+terraform destroy
+```
